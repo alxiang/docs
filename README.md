@@ -1,6 +1,6 @@
 # Social Navigation Simulation Platform Documentation
 
-Preview site: [https://romantic-curie-8ece18.netlify.app/]()
+Preview site: https://romantic-curie-8ece18.netlify.app/
 
 Pushing to master will update the preview site.
 
