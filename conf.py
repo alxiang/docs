@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Social Navigation Simulation Platform'
-copyright = '2020, Nathan Tsoi'
+copyright = '2020, Yale Interactive Machines Group'
 author = 'Nathan Tsoi'
 
 
@@ -28,6 +28,7 @@ author = 'Nathan Tsoi'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
