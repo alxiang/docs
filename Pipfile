@@ -9,6 +9,8 @@ verify_ssl = true
 sphinx = "*"
 recommonmark = "*"
 sphinx-reload = "*"
+m2r = "*"
+sphinx-rtd-theme = "*"
 
 [requires]
 python_version = "3.7"
