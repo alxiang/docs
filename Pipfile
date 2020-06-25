@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 sphinx = "*"
 recommonmark = "*"
+sphinx-reload = "*"
 
 [requires]
 python_version = "3.7"
