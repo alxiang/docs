@@ -1,4 +1,4 @@
-# Social Navigation Simulation Platform Documentation
+# SEE: Social Evaluation Environment
 
 Preview site: https://romantic-curie-8ece18.netlify.app/
 

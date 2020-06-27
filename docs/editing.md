@@ -6,4 +6,4 @@
 
 ## Sensors
 
-## Pedestrian Navigation
+## Pedestrian Navigation Models

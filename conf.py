@@ -14,16 +14,14 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
-from m2r import MdInclude
 from recommonmark.transform import AutoStructify
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'Social Navigation Simulation Platform'
+project = 'SEE: Social Evaluation Environment'
 copyright = '2020, Yale Interactive Machines Group'
 author = 'Nathan Tsoi'
-
 
 # -- General configuration ---------------------------------------------------
 
@@ -33,6 +31,7 @@ author = 'Nathan Tsoi'
 extensions = [
     'sphinx_rtd_theme',
     'recommonmark',
+    'sphinx.ext.autosectionlabel',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -58,17 +57,13 @@ html_static_path = ['_static']
 
 # https://github.com/rtfd/recommonmark/blob/master/docs/conf.py
 def setup(app):
-    config = {
+    app.add_config_value('recommonmark_config', {
         # 'url_resolver': lambda url: github_doc_root + url,
         'auto_toc_tree_section': 'Contents',
+        'enable_math': False,
+        'enable_inline_math': False,
         'enable_eval_rst': True,
-    }
-    app.add_config_value('recommonmark_config', config, True)
+        #'enable_auto_doc_ref': True,
+    }, True)
     app.add_transform(AutoStructify)
 
-    # from m2r to make `mdinclude` work
-    app.add_config_value('no_underscore_emphasis', False, 'env')
-    app.add_config_value('m2r_parse_relative_links', False, 'env')
-    app.add_config_value('m2r_anonymous_references', False, 'env')
-    app.add_config_value('m2r_disable_inline_math', False, 'env')
-    app.add_directive('mdinclude', MdInclude)
