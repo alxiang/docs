@@ -40,7 +40,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -48,7 +48,22 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
+html_theme = "alabaster"
+html_sidebars = {
+    "**": [
+        "about.html",
+        "searchbox.html",
+        "navigation.html",
+        "relations.html",
+        "donate.html",
+    ]
+}
+html_theme_options = {
+    "description": "A social navigation simulation platform.",
+    "github_user": "yale-img",
+    "github_repo": "social_sim_ros",
+    "fixed_sidebar": True
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -59,6 +74,7 @@ html_static_path = ['_static']
 def setup(app):
     app.add_config_value('recommonmark_config', {
         # 'url_resolver': lambda url: github_doc_root + url,
+        'enable_auto_toc_tree': True,
         'auto_toc_tree_section': 'Contents',
         'enable_math': False,
         'enable_inline_math': False,
