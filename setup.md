@@ -66,6 +66,14 @@ Run the project by clicking on the project name: "SocialNavSim"
 
 You can follow the [ROS Melodic Setup Guide](http://wiki.ros.org/melodic/Installation/Ubuntu) or use the [Docker Compose](#docker-setup) configuration below.
 
+If you're not using Docker, [setup your workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) as normal and from within your workspace, add the git repository:
+
+```
+git clone https://github.com/yale-img/social_sim_ros src/social_sim_ros
+```
+
+Then build with `cakin_make`
+
 #### Docker Setup
 
 Instead of creating and installing a workspace from scratch, you can use our [Docker Compose](https://docs.docker.com/compose/) configuration to create a set of virtual machines in which the simulation platform can be run.
@@ -118,13 +126,15 @@ yarn shell
 - Build the workspace with
 
 ```
-catkin build -c
+catkin_make
 ```
 
 
 # Running the Simulator
 
 If you have the Unity binary, run it now. If you have the Unity editor, press play.
+
+
 
 Once you have built the workspace once, if you install [tmux](https://github.com/tmux/tmux) and [Tmuxinator](https://github.com/tmuxinator/tmuxinator), you can launch all the required ROS components with the following command (outside of the Docker VM shell, but in the ROS workspace directory):
 
