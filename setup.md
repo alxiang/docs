@@ -48,6 +48,8 @@ chmod +x UnityHub.AppImage
 
 Note: signing up for a student account, though not required, will give you access to some free assets: [https://assetstore.unity.com/browse/student-plan-pack](https://assetstore.unity.com/browse/student-plan-pack)
 
+- Add the Unity version 2019.4 (LTS)
+
 Now, continue to setting up the [Unity Project](#unity-project).
 
 ### Unity Project
