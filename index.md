@@ -22,4 +22,5 @@ SEE is a flexible platform. We provide documentation for adding or editing [Envi
     setup
     trials
     editing
+    licences
 ```
