@@ -65,6 +65,8 @@ In Unity Hub, add the project you just cloned by clicking the "Add" button.
 
 Run the project by clicking on the project name: "SocialNavSim"
 
+*Note that if you are unable to add the project, create a new project by clicking the "New" button, restart Unity Hub, and then try adding the project again*
+
 ### ROS Setup
 
 You can follow the [ROS Melodic Setup Guide](http://wiki.ros.org/melodic/Installation/Ubuntu) or use the [Docker Compose](#docker-setup) configuration below.
