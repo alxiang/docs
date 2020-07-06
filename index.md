@@ -20,6 +20,7 @@ SEE is a flexible platform. We provide documentation for adding or editing [Envi
 
     system
     setup
+    running
     trials
     editing
     licences
