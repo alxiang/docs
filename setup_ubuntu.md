@@ -60,7 +60,7 @@ Run the project by clicking on the project name: "SocialNavSim"
 
 You can follow the [ROS Melodic Setup Guide](http://wiki.ros.org/melodic/Installation/Ubuntu) or use the [Docker Compose](#docker-setup) configuration below.
 
-If you're not using Docker, [setup your workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) as normal and from within your workspace, add the git repository:
+If you're not using Docker, [setup your workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) in `~/sim_ws` as normal. Then, from within your workspace add the git repository:
 
 ```
 git clone https://github.com/yale-img/social_sim_ros src/social_sim_ros

@@ -33,7 +33,6 @@ The basic system's communication graph is shown in the following figure:
 .. thumbnail:: /images/basic-graph.gif
 ```
 
-
 #### Robot motor controller
 
 - Subscribing to the `/wheel_right_joint_cmd` and `/left_wheel_joint_cmd` and updating the robot physics in Unity
@@ -42,9 +41,25 @@ The basic system's communication graph is shown in the following figure:
 
 - Publishes the `/odom` frame for the robot to allow for mapping and navigation
 
+  - To publish this frame to the TF tree in ROS, run:
+
+    rosrun social_sim_ros odom_to_tf.py
+
 Note that the `/odom` frame is relative to the Unity origin coordinate frame. When the robot is far from the Unity origin, this transform can be quite large, which may pose a problem for some mapping algorithms
 
-####
+#### Sensors
+
+Sensors can be found within each robot in the Robots prefab.
+
+The relevant ROS connectors can be found in each top level robot object.
+
+##### RGB Camera
+
+The `camera_rgb_frame` object contains the Unity camera object that publishes images from the robot's perspective to ROS. This object can be found in `Robots -> jackal -> base_link -> camera_rgb_frame`. Physical properties of the camera can be adjust via the `Camera` object.
+
+##### Laser Scanner
+
+The `laser_sensor` object is in the `Robots -> jackal -> base_link -> base_scan -> laser_sensor`. Laser scanner properties can be changed via the `Laser Scan Reader` object and the visualization (red lines) can be enabled or disabled via the `Laser Scan Visualizer Lines` property.
 
 ### ROS System Components
 
@@ -52,4 +67,48 @@ Note that the `/odom` frame is relative to the Unity origin coordinate frame. Wh
 
 The `/differential_drive_sim_controller` accepts commands on the topic `/mobile_base_controller/cmd_vel` and publishes them to the `/wheel_right_joint_cmd` and `/left_wheel_joint_cmd` topics for consumption in Unity.
 
-#### Global Localization
+To start the node, run:
+
+    roslaunch social_sim_ros differential_drive_jackal.launch
+
+#### Robot Description
+
+Be sure to publish the correct robot description. For the jackal, this can be done with:
+
+    roslaunch --wait social_sim_ros jackal_description.launch
+
+#### Mapping
+
+Run:
+
+    roslaunch social_sim_ros gmapping_jackal.launch
+
+#### Default Navigation Stack
+
+The default navigation stack can be started via:
+
+    roslaunch --wait social_sim_ros jackal_move_base.launch
+
+#### RVIZ
+
+Default visualization can be started with:
+
+    rosrun rviz rviz -d $(rospack find social_sim_ros)/config/jackal_move.rviz
+
+The robot can then be controlled via the `mobile_base_controller/cmd_vel` topic, which is published to via the trial runner or choosing a navigation point in RVIZ.
+
+### Trial Runner
+
+Trials, a series of navigation tasks over which evaluation data is collected, can be run as follows:
+
+    rosrun --wait social_sim_ros trial_runner.py _trial_name:=T0
+
+Where `_trial_name:=[trial name]`, the results of the trials are written to `experiments/[trial name]`.
+
+### Data Collection
+
+#### PS3 Joystick Robot Control
+
+Teleop via PS3 Joystick can be started via:
+
+    roslaunch --wait social_sim_teleop ps3_teleop.launch
