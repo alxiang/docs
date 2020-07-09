@@ -75,7 +75,7 @@ To start the node, run:
 
 Be sure to publish the correct robot description. For the jackal, this can be done with:
 
-    roslaunch --wait social_sim_ros jackal_description.launch
+    roslaunch social_sim_ros jackal_description.launch
 
 #### Mapping
 
@@ -87,7 +87,7 @@ Run:
 
 The default navigation stack can be started via:
 
-    roslaunch --wait social_sim_ros jackal_move_base.launch
+    roslaunch social_sim_ros jackal_move_base.launch
 
 #### RVIZ
 
@@ -101,7 +101,7 @@ The robot can then be controlled via the `mobile_base_controller/cmd_vel` topic,
 
 Trials, a series of navigation tasks over which evaluation data is collected, can be run as follows:
 
-    rosrun --wait social_sim_ros trial_runner.py _trial_name:=T0
+    rosrun social_sim_ros trial_runner.py _trial_name:=T0
 
 Where `_trial_name:=[trial name]`, the results of the trials are written to `experiments/[trial name]`.
 
@@ -111,4 +111,4 @@ Where `_trial_name:=[trial name]`, the results of the trials are written to `exp
 
 Teleop via PS3 Joystick can be started via:
 
-    roslaunch --wait social_sim_teleop ps3_teleop.launch
+    roslaunch social_sim_teleop ps3_teleop.launch
