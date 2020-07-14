@@ -4,6 +4,86 @@
 
 ## Robots
 
+This guide is to import a URDF robot model to Unity, and update some of its properties to get it ready for working in our environment.
+
+### Importing Jackal
+
+First, we need to transfer the URDF from ROS to Unity, using the ROS-Sharp library importing tool.
+
+There is a similar example for this step in the [ROS-Sharp library docs](https://github.com/siemens/ros-sharp/wiki/User_App_ROS_TransferURDFFromROS).
+
+- Install `rosbridge-suite`:
+```
+sudo apt-get install ros-melodic-rosbridge-server
+```
+
+- Get the `file_server` ROS package from the ROS-Sharp library repo:
+```
+https://github.com/siemens/ros-sharp/tree/master/ROS/file_server
+```
+
+- Get the `jackal_description` ROS package from this git repo:
+```
+https://github.com/jackal/jackal.git
+```
+
+- Run these ROS commands:
+```
+roslaunch rosbridge_server rosbridge_websocket.launch
+rosrun file_server file_server
+roslaunch jackal_description description.launch
+```
+
+Now, navigate to the Unity window of our project in order to import the published description.
+
+- Go to `RosBridgeClient > Transfer URDF from ROS..`.
+
+![image](images/urdf-import-window.png)
+
+- In the dialog box, change the IP address to `ws://127.0.0.1:9090` if you are publishing the URDF description locally from the same machine, or any other address.
+
+- Change the `Asset Path` to any path inside the `Assets` directory of the project.
+
+- Initiate the transfer by clicking the button `Read Robot Description`.
+
+- When this window pops up, click `Yes` to generate the `jackal` game object in the scene.
+
+![image](images/urdf-import-gameobject.png)
+
+Now comes the modifying part, we'll remove the colliders that were generated from the URDF for the wheels, and add the Unity wheel collider for each wheel instead.
+
+- Expand the `jackal` game object in the hierarchy pane, and navigate to `jackal > base_link > chassis_link`.
+
+- You should find 4 game objects for the 4 wheels nested under `chassis_link`, and inside each of those wheels there is a `Collisions` game object, just delete those 4 `Collisions` objects (the highlighted objects in this picture).
+
+![image](images/urdf-import-collisions.png)
+
+- On each of the 4 wheels, in the inspector pane, click on `Add Component` and type `Wheel Collider` to add the Unity wheel collider component for each wheel.
+
+- Adjust the physical parameters of the wheel colliders as you see fit, you can go over this [video](https://www.youtube.com/watch?v=mnAEeE3FcvA) to get a better understanding for each of those parameters.
+
+- The values in the following picture work well with `Jackal`:
+
+![image](images/urdf-wheel-collider.png)
+
+Another modification to make is to configure the chassis colliders of the robot to work with our collision counter script.
+
+- In the hierarchy pane, navigate to `jackal > base_link > chassis_link > Collisions > unnamed > Box`.
+
+- In the inspector pane, make a duplicate of the `Box Collider` component by copying and pasting it as a new component on the same object, then enable the `Is Trigger` boolean in the new component.
+
+- Add the `Count Collisions (Script)` component to the same object, the components of the object now should look like this:
+
+![image](images/urdf-box-collider.png)
+
+The last step is to add the ROS bridge scripts to the `jackal` game object, these scripts are responsible for controlling the robot, publishing the camera and laser sensors back to ROS, and publishing the current position of the robot.
+
+- On the `jackal` game object, add the components shown in the following picture, and change the topic name of each script to work with your ROS nodes:
+
+![image](images/urdf-ros-scripts-motors.png)
+![image](images/urdf-ros-scripts-sensors.png)
+
+
 ## Sensors
 
 ## Pedestrian Navigation Models
