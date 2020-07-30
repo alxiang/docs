@@ -52,6 +52,16 @@ Run the project by clicking on the project name: "SocialNavSim"
 
 ### ROS Setup
 
+There are two options to use ROS on Windows: native windows or in the Windows Subsystem for Linux (WSL). WSL is the recommended approach.
+
+#### Windows Subsystem for Linux
+
+Install WSL for Windows 10 by following the directions here: https://docs.microsoft.com/en-us/windows/wsl/install-win10 and update to WSL2.
+
+Install CUDA for WSL2 by following the guide: https://docs.nvidia.com/cuda/wsl-user-guide/index.html#getting-started
+
+#### Windows Native Setup
+
 You can follow the [ROS Melodic Setup Guide](http://wiki.ros.org/Installation/Windows).
 
 You'll need to:

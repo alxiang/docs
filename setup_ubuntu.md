@@ -96,6 +96,8 @@ cd ~/sim_ws
 - Clone the dependencies into the project `src` folder
 
 ```
+mkdir -p src
+cd src
 git clone https://github.com/yale-img/social_sim_ros src/social_sim_ros
 ```
 
