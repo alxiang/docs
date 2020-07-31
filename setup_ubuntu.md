@@ -84,6 +84,8 @@ First, install the dependencies:
 - [Docker Compose](https://docs.docker.com/compose/install/).
 - [Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable).
 
+Also, don't forget to add your user to the docker group, as described in the Docker documentation post-install instructions for linux: https://docs.docker.com/engine/install/linux-postinstall/.
+
 To use the Docker configuration:
 
 - Clone the workspace into your home folder and `cd` into the workspace:
@@ -110,7 +112,7 @@ yarn build
 - Start the containers with
 
 ```
-yarn start
+yarn up
 ```
 
 - Enter a shell in the Docker Virtual Machine in your ROS workspace
@@ -119,10 +121,10 @@ yarn start
 yarn shell
 ```
 
-- Build the workspace with
+- Then within a container, build the workspace with
 
 ```
 catkin_make
 ```
 
-
+The default nodes can then be launched by running `tmuxinator` in the `sim_ws` folder.
