@@ -112,3 +112,14 @@ Where `_trial_name:=[trial name]`, the results of the trials are written to `exp
 Teleop via PS3 Joystick can be started via:
 
     roslaunch social_sim_teleop ps3_teleop.launch
+
+Or with the `[robot_name]_ps3joy` tmuxinator config, run the jackal in teleop mode for example:
+
+    cd ~/sim_ws/tmux/jackal_ps3joy
+    tmuxinator
+
+Or with the `[robot_name]_ps3joy.launch` launch file, run the jackal in teleop mode for example:
+
+    TODO
+
+Hold the top left trigger button to enable the remote control.
