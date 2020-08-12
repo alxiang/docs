@@ -1,6 +1,4 @@
-# Editing Unity Environment
-
-## Environments
+# Editing Unity
 
 ## Robots
 

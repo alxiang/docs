@@ -1,6 +1,6 @@
 # System Architecture
 
-SEE is built on two main components: the game engine ([Unity](https://unity.com/)) and the Robot Operating System ([ROS](https://www.ros.org/)).
+SEAN is built on two main components: the game engine ([Unity](https://unity.com/)) and the Robot Operating System ([ROS](https://www.ros.org/)).
 
 ## System Diagram
 
@@ -13,7 +13,7 @@ Within Unity, we use the [ROS#](https://github.com/siemens/ros-sharp) library to
 
 ## System Components
 
-SEE is built on two high level systems: [Unity](https://unity.com/) and [ROS](https://www.ros.org/).
+SEAN is built on two high level systems: [Unity](https://unity.com/) and [ROS](https://www.ros.org/).
 
 Our code is divided between these two systems.
 

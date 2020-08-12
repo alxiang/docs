@@ -16,7 +16,7 @@ If you only need to test your algorithm or make changes in ROS, follow the [Unit
 
 #### Binary Setup
 
-Download the latest release of SEE from the release page: [https://gitlab.com/interactive-machines/simulation/social-sim/-/releases](https://gitlab.com/interactive-machines/simulation/social-sim/-/releases
+Download the latest release of SEAN from the release page: [https://gitlab.com/interactive-machines/simulation/social-sim/-/releases](https://gitlab.com/interactive-machines/simulation/social-sim/-/releases
 ).
 
 Now, continue to setting up [ROS](#ros-setup).

@@ -19,7 +19,7 @@ from recommonmark.transform import AutoStructify
 
 # -- Project information -----------------------------------------------------
 
-project = 'SEE: Social Evaluation Environment'
+project = 'SEAN: Social Environment for Autonomous Navigation'
 copyright = '2020, Yale Interactive Machines Group'
 author = 'Nathan Tsoi'
 

@@ -1,4 +1,4 @@
-# SEE: Social Evaluation Environment
+# SEAN: Social Environment for Autonomous Navigation
 
 Preview site: https://romantic-curie-8ece18.netlify.app/
 
