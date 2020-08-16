@@ -16,8 +16,7 @@ If you only need to test your algorithm or make changes in ROS, follow the [Unit
 
 #### Binary Setup
 
-Download the latest release of SEAN from the release page: [https://gitlab.com/interactive-machines/simulation/social-sim/-/releases](https://gitlab.com/interactive-machines/simulation/social-sim/-/releases
-).
+Download the latest release of SEAN from the release page: [https://github.com/yale-img/social_sim_unity/releases](https://github.com/yale-img/social_sim_unity/releases).
 
 Now, continue to setting up [ROS](#ros-setup).
 
@@ -41,12 +40,12 @@ Now, continue to setting up the [Unity Project](#unity-project).
 - Clone the unity project, the location of this project is not important, but we'll clone it to the home directory:
 
 ```
-git clone https://gitlab.com/interactive-machines/simulation/social-sim ~/social-sim
+git clone https://github.com/yale-img/social_sim_unity.git ~/social_sim_unity
 ```
 
-In Unity Hub, add the project you just cloned by clicking the "Add" button.
+In Unity Hub, add the project you just cloned by clicking the "Add" button, and selecting the `social_sim_unity` folder that you just checked out.
 
-Run the project by clicking on the project name: "SocialNavSim"
+Run the project by clicking on the project name: `social_sim_unity`
 
 *Note that if you are unable to add the project, create a new project by clicking the "New" button, restart Unity Hub, and then try adding the project again*
 
