@@ -37,7 +37,7 @@ chmod +x UnityHub.AppImage
 
 Note: signing up for a student account, though not required, will give you access to some free assets: [https://assetstore.unity.com/browse/student-plan-pack](https://assetstore.unity.com/browse/student-plan-pack)
 
-- Add the Unity version 2019.4 (LTS). You can find it [here](https://unity3d.com/unity/qa/lts-releases?_ga=2.203078097.1539413933.1593667443-691579140.1593667443).
+- Add the Unity version 2019.4.0f1. You can find it [here](https://unity3d.com/unity/qa/lts-releases?_ga=2.203078097.1539413933.1593667443-691579140.1593667443).
 
 
 Now, continue to setting up the [Unity Project](#unity-project).
@@ -50,7 +50,7 @@ Now, continue to setting up the [Unity Project](#unity-project).
 git clone https://gitlab.com/interactive-machines/simulation/social-sim ~/social-sim
 ```
 
-In Unity Hub, add the project you just cloned by clicking the "Add" button.
+In Unity Hub, add the project you just cloned by clicking the "Add" button, and selecting the social-sim/Unity/Projects/SocialNavSim folder.
 
 Run the project by clicking on the project name: "SocialNavSim"
 
