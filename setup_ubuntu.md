@@ -49,7 +49,7 @@ Now, continue to setting up the [Unity Project](#unity-project).
 git clone https://github.com/yale-img/social_sim_unity.git ~/social_sim_unity
 ```
 
-In Unity Hub, add the project you just cloned by clicking the "Add" button, and selecting the `social_sim_unity` folder that you just checked out.
+In Unity Hub, add the project you just cloned by clicking the "Add" button.
 
 Run the project by clicking on the project name: `social_sim_unity`
 
