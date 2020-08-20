@@ -22,6 +22,7 @@ SEAN is a flexible platform. We provide documentation for adding or editing [Env
     setup
     running
     trials
+    people
     editing
     environment
     licences
