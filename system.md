@@ -21,7 +21,7 @@ Our code is divided between these two systems.
 
 - The ROS package is available here: [https://github.com/yale-img/social_sim_ros](https://github.com/yale-img/social_sim_ros).
 
-- We also provide a Dockerized ROS workspace here: [https://github.com/yale-img/sim_ws](https://github.com/yale-img/sim_ws).
+- We also provide a Dockerized ROS workspace and development scripts here: [https://github.com/yale-img/sim_ws](https://github.com/yale-img/sim_ws).
 
 - This documentation is hosted here: [https://github.com/yale-img/social-sim-docs](https://github.com/yale-img/social-sim-docs) and pull requests are welcome.
 
@@ -39,6 +39,8 @@ The basic system's communication graph is shown in the following figure:
 
 - Subscribing to the `/wheel_right_joint_cmd` and `/left_wheel_joint_cmd` and updating the robot physics in Unity
 
+*Note that currently the only controller that is implemented is the differential drive controller*
+
 #### Global Localization
 
 - Publishes the `/odom` frame for the robot to allow for mapping and navigation
@@ -46,8 +48,6 @@ The basic system's communication graph is shown in the following figure:
   - To publish this frame to the TF tree in ROS, run:
 
     rosrun social_sim_ros odom_to_tf.py
-
-Note that the `/odom` frame is relative to the Unity origin coordinate frame. When the robot is far from the Unity origin, this transform can be quite large, which may pose a problem for some mapping algorithms
 
 #### Sensors
 
