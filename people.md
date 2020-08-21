@@ -38,7 +38,7 @@ This script picks an avatar prefab at random from the *Resources/Prefabs/Rocketb
 - Make sure the other parameters in *Animator* are as the following:  
 ![image](images/animator-inspector.png)
 - Add a *Rigidbody* component to it and keep the default parameters.
-- Add a *CapsuleCollider* component to it and modify the parameters according to the height of the avatar, for example the numbers in the following picture work with most heights:
+- Add a *CapsuleCollider* component to it and modify the parameters according to the height of the avatar, for example the numbers in the following picture work with most heights:  
 ![image](images/capsule-inspector.png)
 - Drag the game object from the scene to the *Assets/Resources/Prefabs/Rocketbox* directory to save its prefab to be available for selection by the *RocketboxRandomAvatar* script.
 
