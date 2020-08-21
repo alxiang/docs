@@ -13,7 +13,7 @@
 **Path:** Assets/Resources/Prefabs/RocketboxSFRandom.prefab  
 **Distribution:** Developed by us
 
-This is the prefab used by *AgentManager* and *TrialAgentManager* scripts to generate characters, it has the 
+This is the prefab used by *StandaloneAgentManager* and *TrialAgentManager* scripts to generate characters, it has the 
 *RocketboxRandomAvatar* script which picks an avatar prefab at random from the *Resources/Prefabs/Rocketbox* directory and instantiate it in the scene.
 
 ### Scripts
@@ -66,7 +66,7 @@ This prefab must be present in any scene in order to add UMA characters to that 
 **Path:** Assets/Resources/Prefabs/UMASFRandom.prefab  
 **Distribution:** Developed by UMA (*UMARandomGeneratedCharacter*), modified by us
 
-This is the prefab used by *AgentManager* and *TrialAgentManager* scripts to generate characters, it has the *UMARandomAvatar* script which generates an instance of the *UMASFAvatar* prefab with random DNA and clothes.
+This is the prefab used by *StandaloneAgentManager* and *TrialAgentManager* scripts to generate characters, it has the *UMARandomAvatar* script which generates an instance of the *UMASFAvatar* prefab with random DNA and clothes.
 
 #### UMASFAvatar
 
