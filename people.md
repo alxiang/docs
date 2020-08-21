@@ -13,7 +13,8 @@
 **Path:** Assets/Resources/Prefabs/RocketboxSFRandom.prefab  
 **Distribution:** Developed by us
 
-This is the prefab used by *AgentManager* and *TrialAgentManager* scripts to generate characters, it has the RocketboxRandomAvatar script which picks an avatar prefab at random from the *Resources/Prefabs/Rocketbox* directory and instantiate it in the scene.
+This is the prefab used by *AgentManager* and *TrialAgentManager* scripts to generate characters, it has the 
+*RocketboxRandomAvatar* script which picks an avatar prefab at random from the *Resources/Prefabs/Rocketbox* directory and instantiate it in the scene.
 
 ### Scripts
 
@@ -22,9 +23,24 @@ This is the prefab used by *AgentManager* and *TrialAgentManager* scripts to gen
 **Path:** Assets/Scripts/Agents/RocketboxRandomAvatar.cs  
 **Distribution:** Developed by us
 
-This script picks an avatar prefab at random from the *Resources/Prefabs/Rocketbox* directory and instantiate it in the scene in its same location.
+This script picks an avatar prefab at random from the *Resources/Prefabs/Rocketbox* directory and instantiate it in the scene in its same location, then it adds to it the necessary components for animation and navigation.
 
 ### Making a Rocektbox avatar prefab
+
+- Locate the desired avatar in *Assets/ExternalAssets/Microsoft-Rocketbox/Assets/Avatars*.
+- Locate the *\*.fbx* file for this avatar, it will be in the *Export* directory:  
+![image](images/avatar-export-dir.png)
+- Click the *\*.fbx* file once, you should see the following in the *Inspector*:  
+![image](images/fbx-file-inspector.png)
+- In the *Rig* window, adjust the parameters as the picture above, then click *Apply*.
+- Now drag the *\*.fbx* file into the scene, and click it to edit its components.
+- In the *Animator* component, select *ThirdPersonAnimatorController* as the *Controller*, and for the *Avatar* field, if the character is male, then select *Male_Adult_01Avatar*, if the character is female, then select *Female_Adult_02Avatar*.
+- Make sure the other parameters in *Animator* are as the following:  
+![image](images/animator-inspector.png)
+- Add a *Rigidbody* component to it and keep the default parameters.
+- Add a *CapsuleCollider* component to it and modify the parameters according to the height of the avatar, for example the numbers in the following picture work with most heights:
+![image](images/capsule-inspector.png)
+- Drag the game object from the scene to the *Assets/Resources/Prefabs/Rocketbox* directory to save its prefab to be available for selection by the *RocketboxRandomAvatar* script.
 
 
 
@@ -139,11 +155,11 @@ Just drag an instance of either the *RockeboxSFRandom* prefab (if using Rocketbo
 
 *TrialAgentManager* and *StandaloneAgentManager* scripts can be used to automatically generate random characters in the scene by following these steps:
 
-- Create some placeholder objects with the tag “Spawn” to specify the spawn positions
-- Create an empty game object
-- Add *TrialAgentManager* or *StandaloneAgentManager* to that empty object
-- Specify the desired Pathfinding Frequency and Perception Radius in the Inspector pane
-- In Agent Prefab field, select the *RocketboxSFRandom* or *UMASFRandom* prefab
-- In Agent Parent field, select any empty game object to hold the agents’ objects
-- If using *StandaloneAgentManager*, specify the number of agents in Agent Count
-- If using *TrialAgentManager*, specify the spawn positions publisher in Pose Array Publisher
+- Create some placeholder objects with the tag *“Spawn”* to specify the spawn positions.
+- Create an empty game object.
+- Add *TrialAgentManager* or *StandaloneAgentManager* to that empty object.
+- Specify the desired Pathfinding Frequency and Perception Radius in the Inspector pane.
+- In Agent Prefab field, select the *RocketboxSFRandom* or *UMASFRandom* prefab.
+- In Agent Parent field, select any empty game object to hold the agents’ objects.
+- If using *StandaloneAgentManager*, specify the number of agents in Agent Count.
+- If using *TrialAgentManager*, specify the spawn positions publisher in Pose Array Publisher.
