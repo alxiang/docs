@@ -81,9 +81,24 @@ Be sure to publish the correct robot description. For the jackal, this can be do
 
 #### Mapping
 
-Run:
+There are currently two options for mapping: 1) using the [static map generated in Unity](editing.html#map) and published via the `map_server` or 2) gmapping.
+
+1. Start static mapping with the `[environment name]_map_server.launch` file. For example:
+
+    ```
+    roslaunch social_sim_ros lab_map_server.launch
+    ```
+
+    - You'll also want to start the odom and map frame publisher with:
+
+    ```
+    rosrun social_sim_ros odom_to_tf.py _publish_map_frame:=true
+    ```
+
+1. gmapping can be run with the `gmapping_[robot_name].launch` launch file. For example:
 
     roslaunch social_sim_ros gmapping_jackal.launch
+
 
 #### Default Navigation Stack
 

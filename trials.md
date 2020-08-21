@@ -19,4 +19,3 @@ Parameters:
     The trial runner allows testing the same initial conditions (e.g. initial people and initial robot positions). This is done by randomly initializing the initial conditions when a trial is first run. Trials are identified by their `_trial_name`. Subsequent runs of the same `_trial_name` will re-use the initial conditions from the first run. Note that if the first run has less `_num_trials` than subsequent runs, only the initial `_num_trials` will be run.
 
     This means that every run with unique initial conditions should have a unique `_trial_name`.
-

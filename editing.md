@@ -81,6 +81,49 @@ The last step is to add the ROS bridge scripts to the `jackal` game object, thes
 ![image](images/urdf-ros-scripts-motors.png)
 ![image](images/urdf-ros-scripts-sensors.png)
 
+## Map
+
+### Generate a Static Map
+
+A static map for a scene can be generated in Unity.
+
+- Add the `CreateMap` prefab to a scene.
+
+- Resize and reposition the `LowerMap` object to cover the area of the scene you wish to map
+
+- Assign the main scene object to the `Map Creator` script. In our example, this is the `Lab` object. 
+
+- Start a `roscore` and press the play button in the Unity Editor.
+
+- Wait until you see the following message in the Unity Editor Console: 
+
+   ```
+   origin (x,y,yaw): ([x value], [y value], 0)
+   ```
+
+- The above x and y value are the bottom left coordinates of the map in the ROS map coordinate frame. Create a new folder in the `social_sim_ros/maps` directory with the name of your environment, e.g. 'lab'. Copy the above values into a new `map.yaml` file with the following content:
+
+    ```
+    image: short_map.jpg
+    resolution: 0.1
+    origin: [[x value],[y value],0]
+    occupied_thresh: 0.5
+    free_thresh: 0.5
+    negate: 0
+    ```
+
+- The `resolution` parameter should match the resolution specified in the `Map Creator` script in Unity.
+
+- Open an `rqt_image_view` and subscribe to `/short_map_image/compressed` use the save button to save the map image as `short_map.jpg` in the same folder as your `map.yaml` file.
+
+- Finally, launch a map server using your new map with:
+
+    ```
+    rosnode map_server map_server $(rospack find social_sim_ros)/maps/lab/map.yaml
+    ```
+
+- By convention, launch files for maps for existing environments exist with the name `[environment name]_map_server.launch`
+
 
 ## Sensors
 
