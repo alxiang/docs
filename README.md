@@ -1,6 +1,6 @@
 # SEAN: Social Environment for Autonomous Navigation
 
-Preview site: https://romantic-curie-8ece18.netlify.app/
+Preview site: http://yale-sean.netlify.com/
 
 Pushing to master will update the preview site.
 
