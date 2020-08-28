@@ -1,5 +1,21 @@
 # Environment
 
+We provide two environments as part of SEAN an indoor scene modeled after our [real world lab](#lab-scene) and a [large outdoor scene](#outdoor-scene). We also provide instructions for importing and using the [Windridge city environment](#windridge-city).
+
+## Lab Scene
+
+The lab scene is modeled after our real world lab situation and is available under the [Scenes folder](https://github.com/yale-img/social_sim_unity/tree/master/Assets/Scenes) of the [Unity project](https://github.com/yale-img/social_sim_unity).
+
+For details on using the lab scene, please see the instructions on [running the simulator](running.html).
+
+Not only are the Unity components open source as part of the [Unity project](https://github.com/yale-img/social_sim_unity), but also the original [Maya](https://www.autodesk.com/products/maya) meshes are available as well, if you would like to make edits to components of the scene.
+
+## Outdoor Scene
+
+The outdoor scene is a large city environment, also available in the [Scenes folder](https://github.com/yale-img/social_sim_unity/tree/master/Assets/Scenes) of the [Unity project](https://github.com/yale-img/social_sim_unity).
+
+The original [Maya](https://www.autodesk.com/products/maya) meshes for this scene are also available.
+
 ## Windridge City
 
 While we can't include assets from the asset store in our source code, you can easily import environments from the [Unity Asset Store](https://assetstore.unity.com/) such as [Windridge City](https://assetstore.unity.com/packages/3d/environments/roadways/windridge-city-132222). This portion of the guide explains how.

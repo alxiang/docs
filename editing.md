@@ -127,6 +127,8 @@ A static map for a scene can be generated in Unity.
 
 ## Sensors
 
+The laser senser is provided by ROS#:
+
 ## Pedestrian Navigation Models
 
 # ROS integration
