@@ -36,11 +36,15 @@ chmod +x UnityHub.AppImage
 
 Note: signing up for a student account, though not required, will give you access to some free assets: [https://assetstore.unity.com/browse/student-plan-pack](https://assetstore.unity.com/browse/student-plan-pack)
 
+- Close UnityHub by hitting `CTRL-C`.
+
 - Install Unity Version `2019.4.0f1` by running the `UnityHub.AppImage` binary that was downloaded above with the version argument: `unityhub://2019.4.0f1/0af376155913`, like so:
 
 ```
-UnityHub.AppImage unityhub://2019.4.0f1/0af376155913
+./UnityHub.AppImage unityhub://2019.4.0f1/0af376155913
 ```
+
+Then accept the defaults to install Unity, optionally installing any target build environments you may want to build for in the future.
 
 Now, continue to setting up the [Unity Project](#unity-project).
 
