@@ -2,6 +2,10 @@
 
 Documentation site: http://sean.interactive-machines.com/
 
+Pushing to the master branch of this repository will update the preview site.
+
+## Source Repositories
+
 ROS project: https://github.com/yale-img/social_sim_ros
 
 Unity Project: https://github.com/yale-img/social_sim_unity
@@ -9,8 +13,6 @@ Unity Project: https://github.com/yale-img/social_sim_unity
 Documentation (this project): https://github.com/yale-img/social-sim-docs
 
 Dockerized Catkin Workspace: https://github.com/yale-img/sim_ws
-
-Pushing to master will update the preview site.
 
 ## Setup
 
