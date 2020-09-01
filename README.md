@@ -1,6 +1,14 @@
 # SEAN: Social Environment for Autonomous Navigation
 
-Preview site: http://yale-sean.netlify.com/
+Documentation site: http://sean.interactive-machines.com/
+
+ROS project: https://github.com/yale-img/social_sim_ros
+
+Unity Project: https://github.com/yale-img/social_sim_unity
+
+Documentation (this project): https://github.com/yale-img/social-sim-docs
+
+Dockerized Catkin Workspace: https://github.com/yale-img/sim_ws
 
 Pushing to master will update the preview site.
 
