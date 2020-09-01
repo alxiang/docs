@@ -10,7 +10,7 @@ ROS project: https://github.com/yale-img/social_sim_ros
 
 Unity Project: https://github.com/yale-img/social_sim_unity
 
-Documentation (this project): https://github.com/yale-img/social-sim-docs
+Documentation (this repository): https://github.com/yale-img/social-sim-docs
 
 Dockerized Catkin Workspace: https://github.com/yale-img/sim_ws
 
