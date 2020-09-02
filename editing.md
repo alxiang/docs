@@ -127,7 +127,7 @@ A static map for a scene can be generated in Unity.
 
 ## Sensors
 
-The laser senser is provided by ROS#:
+The laser sensor is provided by ROS#:
 
 ## Pedestrian Navigation Models
 
@@ -139,7 +139,7 @@ The implementation in Unity consists of 2 layers:
 
 ### Unity AI Navigation
 
-The first layer uses the Unity AI navigation algorithms to compute a global path starting from the current position of the character to the target position, considering only the static elements of the environment that are specified by baking a [NavMesh](https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html) for each specific scene.
+The first layer uses the Unity AI navigation algorithms to compute a global path starting from the current position of the character to the target position considering only the static elements of the environment that are specified by baking a [NavMesh](https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html) for each specific scene.
 
 That global path is represented as an array of points through which the character should walk sequentially until it reaches the destination (the last point in the array).
 
