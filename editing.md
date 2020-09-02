@@ -131,6 +131,24 @@ The laser senser is provided by ROS#:
 
 ## Pedestrian Navigation Models
 
+The pedestrian navigation in SEAN is based on this [paper](https://ivi.cs.rutgers.edu/2020/07/23/paper-published-at-eccv-2020/) by [Rutgers Intelligent Visual Interfaces Lab](https://ivi.cs.rutgers.edu/) and its [Unity implementation](https://github.com/SSSohn/social-forces).
+
+The implementation in Unity consists of 2 layers:
+1. Navigation through the static elements in the environment (such as walls, trees, and furniture) using Unity's [NavMesh Agents](https://docs.unity3d.com/Manual/class-NavMeshAgent.html).
+2. Social forces model to account for both static (walls, trees) and dynamic (robots, other pedestrians) elements in the environement.
+
+### Unity AI Navigation
+
+The first layer uses the Unity AI navigation algorithms to compute a global path starting from the current position of the character to the target position, considering only the static elements of the environment that are specified by baking a [NavMesh](https://docs.unity3d.com/Manual/nav-BuildingNavMesh.html) for each specific scene.
+
+That global path is represented as an array of points through which the character should walk sequentially until it reaches the destination (the last point in the array).
+
+### Social Forces Model
+
+Social forces model is added to avoid dynamic obstacles as well, this is implemented by adding a virtual [SphereCollider](https://docs.unity3d.com/Manual/class-SphereCollider.html) to each character with a radius of the perception radius that the character should have.
+
+Once any other colliding game object collides with that virtual sphere, a script will be triggered to apply a repellent force to the character to move it away from the colliding object. This force is multiplied by different weights depending on the type of the colliding game object.
+
 # ROS integration
 
 ## Custom ROS Messages
