@@ -10,6 +10,18 @@ The Social Environment for Autonomous Navigation (SEAN) is a high fidelity, exte
     </div>
 ```
 
+If you use this work in your research, please consider citing:
+
+```
+@inproceedings{Tsoi_2020_HAI,
+  author    = {Tsoi, Nathan and Hussein, Mohamed and Espinoza, Jeacy and Ruiz, Xavier and V\'{a}zquez, Marynel},
+  title     = {SEAN: Social Environment for Autonomous Navigation},
+  booktitle = {Proceedings of the 8th International Conference on Human-Agent Interaction (HAI)},
+  month     = {November},
+  year      = {2020},
+}
+```
+
 To get started, go to: [Setup](setup.html#setup).
 
 ## Features
