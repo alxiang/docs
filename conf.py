@@ -61,7 +61,7 @@ html_sidebars = {
 }
 html_theme_options = {
     "description": "A social navigation simulation platform.",
-    "github_user": "yale-img",
+    "github_user": "yale-sean",
     "github_repo": "social_sim_ros",
     "fixed_sidebar": True
 }

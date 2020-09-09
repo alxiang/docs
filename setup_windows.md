@@ -16,7 +16,7 @@ If you only need to test your algorithm or make changes in ROS, follow the [Unit
 
 #### Binary Setup
 
-Download the latest release of SEAN from the release page: [https://github.com/yale-img/social_sim_unity/releases](https://github.com/yale-img/social_sim_unity/releases).
+Download the latest release of SEAN from the release page: [https://github.com/yale-sean/social_sim_unity/releases](https://github.com/yale-sean/social_sim_unity/releases).
 
 Now, continue to setting up [ROS](#ros-setup).
 
@@ -40,7 +40,7 @@ Now, continue to setting up the [Unity Project](#unity-project).
 - Clone the unity project, the location of this project is not important, but we'll clone it to the home directory:
 
 ```
-git clone https://github.com/yale-img/social_sim_unity.git ~/social_sim_unity
+git clone https://github.com/yale-sean/social_sim_unity.git ~/social_sim_unity
 ```
 
 In Unity Hub, add the project you just cloned by clicking the "Add" button, and selecting the `social_sim_unity` folder that you just checked out.
@@ -94,7 +94,7 @@ git clone https://github.com/Microsoft/vcpkg.git c:\opt\vcpkg
 [Setup your workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) as normal. Then, from within your workspace, add the git repository:
 
 ```
-git clone https://github.com/yale-img/social_sim_ros src/social_sim_ros
+git clone https://github.com/yale-sean/social_sim_ros src/social_sim_ros
 ```
 
 Then build with `cakin_make`

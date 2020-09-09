@@ -4,15 +4,15 @@ We provide two environments as part of SEAN an indoor scene modeled after our [r
 
 ## Lab Scene
 
-The lab scene is modeled after our real world lab situation and is available under the [Scenes folder](https://github.com/yale-img/social_sim_unity/tree/master/Assets/Scenes) of the [Unity project](https://github.com/yale-img/social_sim_unity).
+The lab scene is modeled after our real world lab situation and is available under the [Scenes folder](https://github.com/yale-sean/social_sim_unity/tree/master/Assets/Scenes) of the [Unity project](https://github.com/yale-sean/social_sim_unity).
 
 For details on using the lab scene, please see the instructions on [running the simulator](running.html).
 
-Not only are the Unity components open source as part of the [Unity project](https://github.com/yale-img/social_sim_unity), but also the original [Maya](https://www.autodesk.com/products/maya) meshes are available as well, if you would like to make edits to components of the scene.
+Not only are the Unity components open source as part of the [Unity project](https://github.com/yale-sean/social_sim_unity), but also the original [Maya](https://www.autodesk.com/products/maya) meshes are available as well, if you would like to make edits to components of the scene.
 
 ## Outdoor Scene
 
-The outdoor scene is a large city environment, also available in the [Scenes folder](https://github.com/yale-img/social_sim_unity/tree/master/Assets/Scenes) of the [Unity project](https://github.com/yale-img/social_sim_unity).
+The outdoor scene is a large city environment, also available in the [Scenes folder](https://github.com/yale-sean/social_sim_unity/tree/master/Assets/Scenes) of the [Unity project](https://github.com/yale-sean/social_sim_unity).
 
 The original [Maya](https://www.autodesk.com/products/maya) meshes for this scene are also available.
 

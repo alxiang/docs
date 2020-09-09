@@ -17,13 +17,15 @@ SEAN is built on two high level systems: [Unity](https://unity.com/) and [ROS](h
 
 Our code is divided between these two systems.
 
-- The Unity project is available here: [https://github.com/yale-img/social_sim_unity](https://github.com/yale-img/social_sim_unity).
+- The Unity project is available here: [https://github.com/yale-sean/social_sim_unity](https://github.com/yale-sean/social_sim_unity).
 
-- The ROS package is available here: [https://github.com/yale-img/social_sim_ros](https://github.com/yale-img/social_sim_ros).
+- The ROS package is available here: [https://github.com/yale-sean/social_sim_ros](https://github.com/yale-sean/social_sim_ros).
 
-- We also provide a Dockerized ROS workspace and development scripts here: [https://github.com/yale-img/sim_ws](https://github.com/yale-img/sim_ws).
+- We also provide a Dockerized ROS workspace and development scripts here: [https://github.com/yale-sean/sim_ws](https://github.com/yale-sean/sim_ws).
 
-- This documentation is hosted here: [https://github.com/yale-img/social-sim-docs](https://github.com/yale-img/social-sim-docs) and pull requests are welcome.
+- This documentation is hosted here: [https://github.com/yale-sean/docs](https://github.com/yale-sean/docs).
+
+Pull requests are welcome!
 
 ### Unity System Components
 

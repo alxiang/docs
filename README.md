@@ -6,13 +6,13 @@ Pushing to the master branch of this repository will update the preview site.
 
 ## Source Repositories
 
-ROS project: https://github.com/yale-img/social_sim_ros
+ROS project: https://github.com/yale-sean/social_sim_ros
 
-Unity Project: https://github.com/yale-img/social_sim_unity
+Unity Project: https://github.com/yale-sean/social_sim_unity
 
-Documentation (this repository): https://github.com/yale-img/social-sim-docs
+Documentation (this repository): https://github.com/yale-sean/docs
 
-Dockerized Catkin Workspace: https://github.com/yale-img/sim_ws
+Dockerized Catkin Workspace: https://github.com/yale-sean/sim_ws
 
 ## Setup
 

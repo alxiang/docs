@@ -4,7 +4,7 @@ To run the simulator, the basic steps are: start a roscore and ros bridge, start
 
  - Start all the ROS with the command `roslaunch social_sim_ros jackal_demo.launch`.
 
-*Note in development, it may be useful to run the necessary commands in their own shell windows, in which case the `tmuxinator` configurations in the [sim_ws](https://github.com/yale-img/sim_ws/tree/master/tmux) project may be used.*
+*Note in development, it may be useful to run the necessary commands in their own shell windows, in which case the `tmuxinator` configurations in the [sim_ws](https://github.com/yale-sean/sim_ws/tree/master/tmux) project may be used.*
 
  - Open the Unity editor, open the `Assets/Scenes/IndoorLabScene.unity` scene file.
 
