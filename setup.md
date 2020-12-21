@@ -12,6 +12,8 @@ You'll also need a working [ROS Melodic](http://wiki.ros.org/melodic) workspace.
 
 [Ubuntu Setup Guide](setup_ubuntu)
 
+[MacOS Setup Guide](setup_mac)
+
 [Windows Setup Guide](setup_windows)
 
 
@@ -21,5 +23,6 @@ You'll also need a working [ROS Melodic](http://wiki.ros.org/melodic) workspace.
     :glob:
 
     setup_ubuntu
+    setup_mac
     setup_windows
 ```

@@ -72,6 +72,14 @@ If you're not using Docker, [setup your workspace](http://wiki.ros.org/catkin/Tu
 git clone https://github.com/yale-sean/social_sim_ros src/social_sim_ros
 ```
 
+Add your ```setup.bash``` file (```located in sim_ws\devel```) to your ```.bashrc``` file by running 
+
+```bash
+echo "source ~/sim_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+This ensures ROS knows where your project is. 
+
 Then go to the root of your workspace, install dependencies and build your workspace:
 
 ```bash

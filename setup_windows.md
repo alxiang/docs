@@ -22,6 +22,8 @@ Now, continue to setting up [ROS](#ros-setup).
 
 #### Editor Setup
 
+Important: Make sure to install Unity in native Windows, not in Windows Subsystem for Linux.
+
 Following the [Unity Getting Started Guide](https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html) to download and install the [UnityHub](https://unity3d.com/get-unity/download).
 
 - Download and install UnityHub from: [https://unity3d.com/get-unity/download](https://unity3d.com/get-unity/download)
@@ -37,7 +39,7 @@ Now, continue to setting up the [Unity Project](#unity-project).
 
 ### Unity Project
 
-- Clone the unity project, the location of this project is not important, but we'll clone it to the home directory:
+- Clone the unity project. The location of this project is not important, but we'll clone it to the home directory:
 
 ```
 git clone https://github.com/yale-sean/social_sim_unity.git ~/social_sim_unity
@@ -59,13 +61,15 @@ Install WSL for Windows 10 by following the directions here: https://docs.micros
 
 Install CUDA for WSL2 by following the guide: https://docs.nvidia.com/cuda/wsl-user-guide/index.html#getting-started
 
+Then, follow the [Ubuntu Installation Guide](setup_ubuntu) to install ROS.
+
 #### Windows Native Setup
 
 You can follow the [ROS Melodic Setup Guide](http://wiki.ros.org/Installation/Windows).
 
 You'll need to:
 
-- Install [Visual Studio Community]
+- Install [Visual Studio Community 2019]
 
   - This should already be installed with Unity, so run the Visual Studio Installer and add the latest Windows 10 SDK
 
@@ -91,10 +95,18 @@ git clone https://github.com/Microsoft/vcpkg.git c:\opt\vcpkg
 
 - Install the `ros-melodic-desktop_full`
 
-[Setup your workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) as normal. Then, from within your workspace, add the git repository:
+[Setup your workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) as normal. Replace ```catkin_ws``` with ```sim_ws```. Then, from within your ```sim_ws\src``` folder, clone the git repository:
 
 ```
 git clone https://github.com/yale-sean/social_sim_ros src/social_sim_ros
 ```
 
-Then build with `cakin_make`
+Add your ```setup.bash``` file (```located in sim_ws/devel```) to your ```.bashrc``` file by running 
+
+```bash
+echo "source ~/sim_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+This ensures ROS knows where your project is. 
+
+Then build with `catkin_make`.

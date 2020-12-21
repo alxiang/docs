@@ -22,7 +22,9 @@ If you use this work in your research, please consider citing:
 }
 ```
 
-To get started, go to: [Setup](setup.html#setup).
+The paper is available here: <a href="https://arxiv.org/pdf/2009.04300.pdf">https://arxiv.org/pdf/2009.04300.pdf</a>.
+
+To get started, follow the [Setup Guide](setup.html#setup).
 
 ## Features
 
@@ -38,6 +40,7 @@ SEAN is a flexible platform. We provide documentation for adding or editing [Env
     :hidden:
     :glob:
 
+    sean-ep
     system
     setup
     running

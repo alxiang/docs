@@ -23,7 +23,7 @@ This is the prefab used by *StandaloneAgentManager* and *TrialAgentManager* scri
 **Path:** Assets/Scripts/Agents/RocketboxRandomAvatar.cs  
 **Distribution:** Developed by us
 
-This script picks an avatar prefab at random from the *Resources/Prefabs/Rocketbox* directory and instantiate it in the scene in its same location, then it adds to it the necessary components for animation and navigation.
+This script picks an avatar prefab at random from the *Resources/Prefabs/Rocketbox* directory and instantiate it in the scene in its same location, then it adds to it the necessary components for animation and navigation. Any changes to properties of the agent Rigidbodies, such as their mass or degrees of freedom, should be made in this script.
 
 ### Making a Rocektbox avatar prefab
 

@@ -37,3 +37,15 @@ To run the simulator, the basic steps are: start a roscore and ros bridge, start
 The robot should move to the goal position!
 
 You're now ready to [run a trial](trials).
+
+## Avatar Control
+
+A user can control a human avatar by launching an `AgentControl*` scene. For example, open `Scenes/AgentControlLabScene` or `Scenes/AgentControlSmallWarehouseScene`
+
+![image](images/AgentControlSmallWarehouseScene.jpg)
+
+Allow the robot to move around the person by launching the Kuri Demo:
+
+```
+roslaunch social_sim_ros kuri_demo.launch
+```
