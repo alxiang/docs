@@ -42,7 +42,7 @@ Now, continue to setting up the [Unity Project](#unity-project).
 - Clone the unity project. The location of this project is not important, but we'll clone it to the home directory:
 
 ```
-git clone https://github.com/yale-sean/social_sim_unity.git ~/social_sim_unity
+git clone --recurse-submodules --remote-submodules https://github.com/yale-sean/social_sim_unity.git ~/social_sim_unity
 ```
 
 In Unity Hub, add the project you just cloned by clicking the "Add" button, and selecting the `social_sim_unity` folder that you just checked out.
@@ -88,7 +88,7 @@ You'll need to:
   - Clone to `c:\opt`
 
 ```
-git clone https://github.com/Microsoft/vcpkg.git c:\opt\vcpkg
+git clone --recurse-submodules --remote-submodules https://github.com/Microsoft/vcpkg.git c:\opt\vcpkg
 ```
 
   - Run `.\bootstrap-vcpkg.bat`
@@ -98,7 +98,7 @@ git clone https://github.com/Microsoft/vcpkg.git c:\opt\vcpkg
 [Setup your workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) as normal. Replace ```catkin_ws``` with ```sim_ws```. Then, from within your ```sim_ws\src``` folder, clone the git repository:
 
 ```
-git clone https://github.com/yale-sean/social_sim_ros src/social_sim_ros
+git clone --recurse-submodules --remote-submodules https://github.com/yale-sean/social_sim_ros src/social_sim_ros
 ```
 
 Add your ```setup.bash``` file (```located in sim_ws/devel```) to your ```.bashrc``` file by running 
