@@ -61,13 +61,14 @@ cd src
 git clone --recurse-submodules --remote-submodules https://github.com/yale-sean/social_sim_ros social_sim_ros
 ```
 
-- Build the Docker container
+- Navigate up to the 'sim_ws' folder and build the Docker container
 
 ```
+cd ~/sim_ws
 ./container build rosmac
 ```
 
-Note: building is only required on the first run or if the docker container changes, so in future runs, this step can be skipped.
+Note: The Docker Desktop application should be running during these steps. Further, building is only required on the first run or if the docker container changes, so in future runs, this step can be skipped.
 
 - Start the containers with
 
